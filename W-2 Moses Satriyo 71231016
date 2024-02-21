@@ -5,11 +5,11 @@ tinggi = float(input("masukkan tinggi anda dalam meter: "))
 berat = BMI * (tinggi**2) 
 print (f"berat badan yang dibutuhkan {berat:.2f} kg.")
 
-# Soal nomor 2
+# # Soal nomor 2
 
 x = float(input("masukkan bilangan bulat = "))
 rumus = 2*x**3 + 2*x + 15/x 
-print ("hasil dari f(x) adalah = ", round(rumus))
+print ("hasilnya adalah = ", round(rumus))
 
 # Soal nomor 3
 
@@ -19,17 +19,17 @@ jumlah_jam_kerja = int(input("masukkan jumlah jam kerja yang anda inginkan = "))
 pendapatan_sebelum_pajak = gaji_per_jam * jumlah_jam_kerja * 5
 pajak_kerja = pendapatan_sebelum_pajak * 0.14
 pendapatan_setelah_pajak = pendapatan_sebelum_pajak - pajak_kerja
-pendapatan_setelah_membeli_pakaian_aksesoris = pendapatan_setelah_pajak * 0.1
-pendapatan_setelah_membeli_alat_tulis = pendapatan_setelah_pajak * 0.01
-sisa_total = pendapatan_setelah_pajak - pendapatan_setelah_membeli_pakaian_aksesoris - pendapatan_setelah_membeli_alat_tulis
-pendapatan_setelah_bersedekah =  sisa_total * 0.25
-uang_diterima_anak_yatim = pendapatan_setelah_bersedekah * 0.3
-uang_diterima_kaum_dhuafa = pendapatan_setelah_bersedekah - uang_diterima_anak_yatim
+jumlah_membeli_pakaian_aksesoris = pendapatan_setelah_pajak * 0.1
+jumlah_membeli_alat_tulis = pendapatan_setelah_pajak * 0.01
+sisa_total = pendapatan_setelah_pajak - jumlah_membeli_pakaian_aksesoris - jumlah_membeli_alat_tulis
+jumlah_uang_bersedekah =  sisa_total * 0.25
+uang_diterima_anak_yatim = jumlah_uang_bersedekah * 0.3
+uang_diterima_kaum_dhuafa = jumlah_uang_bersedekah - uang_diterima_anak_yatim
 # hasil
 print ("pendapatan sebelum pajak adalah = ", round(pendapatan_sebelum_pajak))
 print ("pendapatan setelah pajak adalah = ", round(pendapatan_setelah_pajak))
-print ("jumlah uang yang dihabiskan membeli pakaian dan aksesoris = ", round(pendapatan_setelah_membeli_pakaian_aksesoris))
-print ("jumlah uang yang dihabiskan membeli alat tulis = ", round (pendapatan_setelah_membeli_alat_tulis))
-print ("jumlah uang yang disedekahkan = ", round (pendapatan_setelah_bersedekah))
+print ("jumlah uang yang dihabiskan membeli pakaian dan aksesoris = ", round(jumlah_membeli_pakaian_aksesoris))
+print ("jumlah uang yang dihabiskan membeli alat tulis = ", round (jumlah_membeli_alat_tulis))
+print ("jumlah uang yang disedekahkan = ", round (jumlah_uang_bersedekah))
 print ("uang yang diterima anak yatim  = ", round(uang_diterima_anak_yatim))
 print ("uang yang diterima kaum dhuafa  = ", round(uang_diterima_kaum_dhuafa))
