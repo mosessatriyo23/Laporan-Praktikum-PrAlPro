@@ -28,8 +28,8 @@ uang_diterima_kaum_dhuafa = pendapatan_setelah_bersedekah - uang_diterima_anak_y
 # hasil
 print ("pendapatan sebelum pajak adalah = ", round(pendapatan_sebelum_pajak))
 print ("pendapatan setelah pajak adalah = ", round(pendapatan_setelah_pajak))
-print ("pendapatan setelah membeli pakaian dan aksesoris = ", round(pendapatan_setelah_membeli_pakaian_aksesoris))
-print ("pendapatan setelah membeli alat tulis = ", round (pendapatan_setelah_membeli_alat_tulis))
-print ("pendapatan setelah bersedekah = ", round (pendapatan_setelah_bersedekah))
+print ("jumlah uang yang dihabiskan membeli pakaian dan aksesoris = ", round(pendapatan_setelah_membeli_pakaian_aksesoris))
+print ("jumlah uang yang dihabiskan membeli alat tulis = ", round (pendapatan_setelah_membeli_alat_tulis))
+print ("jumlah uang yang disedekahkan = ", round (pendapatan_setelah_bersedekah))
 print ("uang yang diterima anak yatim  = ", round(uang_diterima_anak_yatim))
 print ("uang yang diterima kaum dhuafa  = ", round(uang_diterima_kaum_dhuafa))
