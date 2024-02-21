@@ -1,9 +1,9 @@
 # Soal nomor 1
 
-berat = float(input("masukkan berat anda dalam kg = "))
-tinggi = float(input("masukkan tinggi anda dalam meter = "))
-BMI = berat / (tinggi**2) 
-print ("berat badan yang kamu perlukan adalah = ", round(BMI))
+BMI = float(input("masukkan Body Mass Index anda: "))
+tinggi = float(input("masukkan tinggi anda dalam meter: "))
+berat = BMI * (tinggi**2) 
+print (f"berat badan yang dibutuhkan {berat:.2f} kg.")
 
 # Soal nomor 2
 
