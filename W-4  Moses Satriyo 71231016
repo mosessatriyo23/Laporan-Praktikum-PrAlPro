@@ -1,0 +1,55 @@
+# soal no 1
+
+def cek_angka (a, b, c):
+    if a!=b and b!=c and c!=a:
+        if a+b==c or b+c==a or a+c==b:
+            return True
+        return False
+    if a==b or b==c or c==a:
+        return False
+
+a = int(input('masukkan bilangan a= '))
+b = int(input('masukkan bilangan b= '))
+c = int(input('masukkan bilangan c= '))
+
+print(cek_angka(a, b, c))
+
+# Soal no 2
+
+def cek_digit_belakang(a, b, c):
+    a = a % 10
+    b = b % 10
+    c = c % 10
+
+    if a==b or b==c or c==a:
+        return True
+    else:
+        return False
+
+a = int(input('masukkan bilangan a= '))
+b = int(input('masukkan bilangan b= '))
+c = int(input('masukkan bilangan c= '))
+
+print(cek_digit_belakang(a, b, c))    
+
+# Soal no 3
+
+r = lambda c: 0.8 * c
+f = lambda c: (9 / 5) * c + 32
+
+def pilih_konversi():
+    print('pilih tujuan konversi')
+    print('1 = fahrenheit')
+    print('2 = reamur')
+    pilih = (input('pilih tujuan konversi yang tersedia pada no 1 atau 2: '))
+    return int(pilih)
+c = int(input('tentukan suhu celcius: '))
+
+pilih_konversi = pilih_konversi()
+
+if pilih_konversi == 1:
+    output= f(c)
+    print('input C = {}. output F = {}.'.format(c, output))
+elif pilih_konversi == 2:
+    output= r(c)
+    print('input C = {}. output R = {}.'.format(c, output))
