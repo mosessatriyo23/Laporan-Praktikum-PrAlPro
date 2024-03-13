@@ -1,0 +1,63 @@
+Soal No 1
+
+a = int(input("Masukkan angka pertama : "))
+b = int(input("Masukkan angka kedua : "))
+
+def perkalian(a, b):
+    hasil = 0
+    for _ in range(b):
+        hasil += a
+    return hasil
+
+def cetak_perhitungan(a, b):
+    hasil_perkalian = perkalian(a, b)
+    langkah_perhitungan = ' + '.join([str(a) for _ in range(b)])
+    print(f"{a} x {b} = {langkah_perhitungan} = {hasil_perkalian}")
+
+cetak_perhitungan(a, b)
+
+Soal No 2
+
+def ganjil(bawah, atas):
+    if bawah < atas:
+        for i in range(bawah, atas+1):
+            if i % 2 != 0:
+                print(i, end=", ")
+    else:
+        for i in range(bawah, atas-1, -1):
+            if i % 2 != 0:
+                print(i, end=", ")
+
+# Example usage:
+ganjil(10, 30)  # Output: 11, 13, 15, 17, 19, 21, 23, 25, 27, 29,
+ganjil(97, 82)  # Output: 97, 95, 93, 91, 89, 87, 85, 83
+
+Soal No 3
+
+def hitung_ips(jumlah_matkul):
+    total_sks = jumlah_matkul * 3
+    total_nilai = 0
+
+    for i in range(1, jumlah_matkul + 1):
+        nilai = input(f"nilai MK {i}: ").upper()
+        if nilai == 'A':
+            total_nilai += 4 * 3
+        elif nilai == 'B':
+            total_nilai += 3 * 3
+        elif nilai == 'C':
+            total_nilai += 2 * 3
+        elif nilai == 'D':
+            total_nilai += 1 * 3
+        else:
+            print("Nilai tidak valid. Masukkan A, B, C, atau D.")
+
+    ips = total_nilai / total_sks
+    return ips
+
+def main():
+    jumlah_matkul = int(input("Berapa jumlah mata kuliah? "))
+    ips = hitung_ips(jumlah_matkul)
+    print(f"Nilai IPS anda semester ini {ips:.2f}")
+
+if __name__ == "__main__":
+    main()
